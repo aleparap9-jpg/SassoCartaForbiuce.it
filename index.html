@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    
+<html>
+<head>
+    <title>
+        SassoCartaForbice.it
+    </title>
+    <style>
+        h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .contenitore-bottoni {
+            display: flex;
+            gap: 10px; /* Aggiunge uno spazio tra i bottoni */
+            justify-content: center; /* Opzionale, per centrare i bottoni */
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div123" ; style="margin:0 auto;
+                                text-align: center;
+                                border: 5px solid black;">
+        <h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
+            id="titolo">
+
+
+            <i>- Benvenuto! -</i>
+        </h1>
+    </div>
+    <div style="text-align:center;">
+        <h3 style="font-family:Arial;
+            margin-top:20px;"
+            id="frase1234">
+            Sei pronto a sfidare l'algoritmo al gioco della morra cinese? <br />
+            Preparati, sarà una sfida estenuante!
+        </h3>
+        <h2 id="fracno">
+            Fai la tua scelta!
+        </h2>
+
+    </div>
+
+
+    <div class="contenitore-bottoni">
+
+        <button style="background-color:lightgreen;
+                           border:2px solid forestgreen "
+                id="sasso"
+                onclick="cliccatoSasso()">
+            <b>Sasso</b>
+        </button>
+
+        <button style="background-color:lightcoral;
+                           border:2px solid darkred"
+                id="carta"
+                onclick="cliccatoCarta()">
+
+            <b>Carta</b>
+        </button>
+
+        <button style="background-color:lightblue;
+                           border:2px solid blue"
+                id="forbice"
+                onclick="cliccatoForbice()">
+            <b>Forbice</b>
+        </button>
+    </div>
+    <div style="text-align:center"
+         id="conferma" ;>
+        <button onclick="verdetto()">
+            CONFERMA!
+        </button>
+    </div>
+
+    <div style="text-align:center">
+        <h3 id="info"> </h3>
+    </div>
+
+    <script src="giuoco.js"></script>
+</body>
+
+</html>
